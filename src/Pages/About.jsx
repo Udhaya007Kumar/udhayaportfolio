@@ -1,6 +1,6 @@
 import React from 'react';
 import { Calendar, MapPin, Briefcase, GraduationCap } from 'lucide-react';
-import homeImg from '../assets/homeimg.jpg';
+import homeImg from '../assets/homeImg.jpg';
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../Utills/motion";
 
