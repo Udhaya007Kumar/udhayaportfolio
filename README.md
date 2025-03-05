@@ -17,8 +17,7 @@
 
 ## 📫 Connect with Me  
 <!-- 🔗 Add your contact details and links -->
-- 📧 Email: [your-email@example.com]  
-- 🔗 Portfolio: [your-portfolio-link]  
-- 🏆 GitHub: [github.com/your-username]  
-- 💼 LinkedIn: [linkedin.com/in/your-profile]  
+- 📧 Email: [udhaya.rajendr@gmail.com]  
+- 🔗 Portfolio: []   
+- 💼 LinkedIn: [linkedin.com/in/your-udhaya]  
 
