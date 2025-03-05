@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 import { FaArrowRight, FaGithub, FaLinkedin } from 'react-icons/fa';
-import homeImg from '../assets/homeimg.jpg';
+import homeImg from '../assets/homeImg.jpg';
 
 const Home = () => {
   return (
