@@ -1,7 +1,7 @@
-💻 Udhayakumar | MERN Stack Developer
+# 💻 Udhayakumar | MERN Stack Developer
 🚀 Passionate Full Stack Developer skilled in React, Node.js, MongoDB, and Redux, crafting scalable and user-friendly web applications.
 
-📌 About Me
+##📌 About Me
 🔹 MERN Stack Developer with 2+ years of experience in building web applications.
 🔹 Strong expertise in React, Redux, Node.js, Express.js, and MongoDB.
 🔹 Passionate about creating responsive, accessible, and user-friendly interfaces.
