@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import { motion } from "framer-motion";
 import { fadeIn,slideIn,scale } from "../Utills/motion";
+import Landinpage from "../assets/Landinpage.avif"; 
+import Lasalon from "../assets/Lasalon.avif"; 
+import RecipesApp from "../assets/RecipesApp.avif"; 
+import ReactbaseLandingPage from "../assets/ReactbaseLandingPage.avif"; 
+import ReelRemy from "../assets/ReelRemy.png"; 
 
 
 const ProjectCard = ({ project }) => {
@@ -26,7 +31,7 @@ const ProjectCard = ({ project }) => {
           ))}
         </div>
         <div className="flex space-x-3">
-          <a 
+          {/* <a 
             href={project.liveUrl} 
             target="_blank" 
             rel="noopener noreferrer"
@@ -34,7 +39,29 @@ const ProjectCard = ({ project }) => {
           >
             <ExternalLink className="h-4 w-4 mr-1" />
             Live Demo
-          </a>
+          </a> */}
+
+{project.liveUrl ? (
+  <a 
+    href={project.liveUrl} 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="flex items-center text-sm text-blue-600 hover:text-blue-800"
+  >
+    <ExternalLink className="h-4 w-4 mr-1" />
+    Live Demo
+  </a>
+) : (
+  <button 
+    onClick={() => setShowModal(true)} 
+    className="flex items-center text-sm text-gray-500 cursor-not-allowed"
+  >
+    <ExternalLink className="h-4 w-4 mr-1" />
+    No Live Link
+  </button>
+)}
+
+
           <a 
             href={project.githubUrl} 
             target="_blank" 
@@ -56,25 +83,25 @@ const Projects = () => {
       id: 1,
       title: "Landing Page ",
       description: "A simple and responsive landing page using semantic HTML, CSS, and vanilla JavaScript.I am working on the Figma page, ensuring all pages function correctly.Designed with clean and structured code for better accessibility.The website is fully responsive and optimized for different devices.A basic yet effective web project showcasing core frontend development skills.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80",
+      image: Landinpage,
       tags: ["HTML", "CSS", "JavaScript"],
-      liveUrl: "#",
-      githubUrl: "#"
+      // liveUrl: "#",
+      // githubUrl: "#"
     },
     {
       id: 2,
       title: "Lasalon Software",
       description: "I was working in a supporting role for the Lasalon software.It uses a .NET backend and Node.js for debugging and data management.I handle salon-side issues, ensuring smooth functionality.If any issues arise, I am called to check and debug them.I work on identifying, debugging, and resolving issues efficiently, including SQL-related data management.Additionally, I developed and managed two form pages using React.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80",
+      image: Lasalon,
       tags: ["React", "Node.js", "Sql",".net"],
-      liveUrl: "#",
-      githubUrl: "#"
+      // liveUrl: "#",
+      // githubUrl: "#"
     },
     {
         id: 3,
         title: "Recipes App",
         description: "This project features a collection of Indian recipes that use a variety of spices like turmeric, cumin, garam masala, coriander, and others.It is built using React.js to display a dynamic and user-friendly interface for browsing recipes.",
-        image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        image: RecipesApp,
         tags: ["React", "Node.js", "MongoDB","Redux","Express"],
         liveUrl: "https://indianspciesrecipesfd.vercel.app/",
         githubUrl: "https://github.com/Udhaya007Kumar/indianspciesrecipes"
@@ -83,28 +110,28 @@ const Projects = () => {
         id: 4,
         title: "Landing page in React base",
         description: "A landing page with dynamic routing, developed for Jarvice software. ",
-        image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
+        image: ReactbaseLandingPage,
         tags: ["React", "React Router"],
-        liveUrl: "#",
-        githubUrl: "#"
+        // liveUrl: "#",
+        // githubUrl: "#"
       },
       {
         id: 5,
         title: "ReelRemy ",
         description: "Streaming Guider Website, ReelRemy is thestreaming guide in the India, with every TV series and movieavailable online. Browse through every TV series and movieand sort by title, release year, genre, IMDB rating, and, mostimportant see where to watch it.",
-        image: "https://www.lifewire.com/thmb/YIJRSbF_OET87qP4uwAaQtNi974=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/hulu-movies-ad0c0ef9cdf6413bbe73e31b1a41234e.png",
+        image: ReelRemy,
         tags: ["Node.js", "Sql", "React"],
-        liveUrl: "#",
-        githubUrl: "#"
+        liveUrl: "https://www.reelremy.in/",
+        // githubUrl: "#"
       },
       {
         id: 6,
         title: "WiseAnt AI Project",
         description: "WiseAnt AI is an advanced AI-powered tool for instant personal finance insights.It provides reliable financial advice from trusted sources.Built with React and AI facial recognition for a seamless user experience.Users can get quick answers to finance-related queries effortlessly.The software ensures accuracy and efficiency in financial decision-making",
-        image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80",
+        image: Lasalon,
         tags: ["React", "API Integration", "CSS Modules"],
         liveUrl: "https://ai.wiseant.co/",
-        githubUrl: "#"
+        // githubUrl: "#"
       },
   ];
 
