@@ -34,12 +34,13 @@ const Skills = () => {
         { name: 'HTML/CSS', level: 95, color: 'bg-blue-500' },
         { name: 'JavaScript', level: 90, color: 'bg-blue-500' },
         { name: 'React', level: 92, color: 'bg-blue-500' },
-        { name: 'TypeScript', level: 85, color: 'bg-blue-500' },
+        { name: 'Redux', level: 70, color: 'bg-blue-500' },
         { name: 'Tailwind CSS', level: 88, color: 'bg-blue-500' },
       ];
       const backendSkills = [
-        { name: 'Node.js', level: 80, color: 'bg-green-500' },
+        { name: 'Node.js', level: 80, color: 'bg-green-500' },  
         { name: 'Express', level: 75, color: 'bg-green-500' },
+        { name: '.Net', level: 50, color: 'bg-green-500' },
         { name: 'MongoDB', level: 70, color: 'bg-green-500' },
         { name: 'SQL', level: 65, color: 'bg-green-500' },
       ];

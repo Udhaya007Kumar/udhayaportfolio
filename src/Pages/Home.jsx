@@ -59,7 +59,7 @@ const Home = () => {
                     <FaGithub className="h-5 w-5 text-white" />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/udhaya-kumar-rajendran-834372354"
                     target="_blank"
                     className="bg-gray-800 hover:bg-blue-500 p-3 rounded-full transition-colors duration-200"
                   >

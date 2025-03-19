@@ -85,7 +85,7 @@ const Projects = () => {
       description: "A simple and responsive landing page using semantic HTML, CSS, and vanilla JavaScript.I am working on the Figma page, ensuring all pages function correctly.Designed with clean and structured code for better accessibility.The website is fully responsive and optimized for different devices.A basic yet effective web project showcasing core frontend development skills.",
       image: Landinpage,
       tags: ["HTML", "CSS", "JavaScript"],
-      // liveUrl: "#",
+       liveUrl: "https://jarvissoftware.in",
       // githubUrl: "#"
     },
     {

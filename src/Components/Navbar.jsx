@@ -61,7 +61,7 @@ const Navbar = () => {
           whileTap={{ scale: 0.95 }}
           className="hidden md:block bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-blue-100"
         >
-          <a href="https://drive.google.com/file/d/1Ei6-7Gw6XrtQXWcNvBo2ZaSYi5h9VEqV/view" target="_blank">Resume</a>
+          <a href="https://drive.google.com/file/d/1FiDzRI__JvRY_W8SPiQYNzJc26qmKJaT/view" target="_blank">Resume</a>
         </motion.button>
       </div>
 
@@ -93,7 +93,7 @@ const Navbar = () => {
               className="w-full bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-blue-100"
             >
               {/* <Link to="/contact">Resume</Link> */}
-              <a href="https://drive.google.com/file/d/1Ei6-7Gw6XrtQXWcNvBo2ZaSYi5h9VEqV/view">Resume</a>
+              <a href="https://drive.google.com/file/d/1FiDzRI__JvRY_W8SPiQYNzJc26qmKJaT/view">Resume</a>
             </motion.button>
           </motion.div>
         </motion.div>
