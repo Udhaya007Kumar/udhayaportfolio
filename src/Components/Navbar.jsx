@@ -61,7 +61,7 @@ const Navbar = () => {
           whileTap={{ scale: 0.95 }}
           className="hidden md:block bg-blue-600 text-white px-6 py-2.5 rounded-lg hover:bg-blue-700 text-sm font-medium transition-all hover:shadow-lg hover:shadow-blue-100"
         >
-          <a href="https://drive.google.com/file/d/1FiDzRI__JvRY_W8SPiQYNzJc26qmKJaT/view" target="_blank">Resume</a>
+          <a href="https://drive.google.com/file/d/1eWN2VpDu0L47aslayiVXuLqrpJE0HJNx/view?usp=sharing" target="_blank">Resume</a>
         </motion.button>
       </div>
 
