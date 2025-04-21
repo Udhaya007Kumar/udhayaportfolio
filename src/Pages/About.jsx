@@ -22,7 +22,7 @@ const About = () => {
                 {" "}
                 Full-Stack Developer
               </span>
-              with 2 years of experience in MERN Stack Development. I specialize
+              with 4 years of experience in MERN Stack Development. I specialize
               in building interactive and scalable web applications.
             </p>
           </motion.div>
@@ -60,11 +60,11 @@ const About = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="flex items-center">
                   <Calendar className="h-5 w-5 text-blue-500 mr-2" />
-                  <span className="text-gray-700">Experience: 2+ years</span>
+                  <span className="text-gray-700">Experience: 4+ years</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-5 w-5 text-blue-500 mr-2" />
-                  <span className="text-gray-700">Location: India</span>
+                  <span className="text-gray-700"> Chennai, India</span>
                 </div>
                 <div className="flex items-center">
                   <Briefcase className="h-5 w-5 text-blue-500 mr-2" />
@@ -90,25 +90,34 @@ const About = () => {
             <div className="space-y-8">
               {[
                 {
-                  year: "jun- Present",
+                  year: "Feb 2021 — Present",
                   title: "Full Stack Developer",
                   company: "Jarvis Software Private Limited",
-                  description:
-                    "IMDB rating, and, mostimportant see where to watch it.",
+                  description:[
+                    "Developed fully responsive landing pages with React Tailwind CSS",
+                    "Integrated IMDb API in ReelRemy using Redux for dynamic data handling",
+                    "Implemented real-time facial recognition features in WiseAnt AI",
+                    "Built scalable front-end architecture improving code reusability",
+
+                ]
+                   
                 },
+                // {
+                //   year: "Mar 2023 to Jun 2024",
+                //   title: "Support Engineer",
+                //   company: "Mousebiz Infotech Pvt Ltd",
+                //   description:
+                //     "Lasalon: Developed and maintained web pages using Lasalon software.Handled backend errors and debugging to improve system stability.",
+                // },
                 {
-                  year: "Mar 2023 to Jun 2024",
-                  title: "Support Engineer",
-                  company: "Mousebiz Infotech Pvt Ltd",
-                  description:
-                    "Lasalon: Developed and maintained web pages using Lasalon software.Handled backend errors and debugging to improve system stability.",
-                },
-                {
-                  year: "sep 2013 to Mar 2023",
+                  year: "sep 2013 to Oct 2020",
                   title: "Graphics Designer",
-                  company: "Global Private Limited",
-                  description:
-                    "Designed numerous marketing campaigns Managed up to five projects at a time Took part in the company's rebranding Managed junior designers on projects.",
+                  company: "Global tech private limited",
+                  description:[
+                    "Designed logos, banners, and marketing creatives using Photoshop Illustrator.",
+                    "Improved social media engagement through high-impact designs."
+                  ]
+                    
                 },
               ].map((item, index) => (
                 <div key={index} className="flex">
@@ -126,7 +135,12 @@ const About = () => {
                       {item.title}
                     </h3>
                     <div className="text-gray-600 mb-2">{item.company}</div>
-                    <p className="text-gray-700">{item.description}</p>
+                    <ul className="list-disc pl-5 space-y-1 text-gray-700">
+        {item.description.map((point, idx) => (
+          <li key={idx}>{point}</li>
+        ))}
+      </ul>
+                    
                   </motion.div>
                 </div>
               ))}

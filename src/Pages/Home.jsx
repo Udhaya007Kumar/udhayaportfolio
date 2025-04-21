@@ -24,9 +24,11 @@ const Home = () => {
                     1000,
                     "Full Stack Developer",
                     1000,
-                    "React Specialist",
+                    "React Developer",
                     1000,
-                    "Problem Solver",
+                    "BackEnd Developer",
+                    1000,
+                    "React Specialist",
                     1000,
                   ]}
                   wrapper="span"
